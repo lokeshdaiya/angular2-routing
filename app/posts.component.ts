@@ -6,7 +6,9 @@ import { PostsService} from './posts.service'
     <div>
     <ul>
         <li *ngFor="let post of posts">
-            {{post.title}}
+            <a [routerLink]="['/posts',post.id]" routerLinkActive="active">
+                {{post.title}}
+            </a>
         </li>
      </ul>   
     </div>

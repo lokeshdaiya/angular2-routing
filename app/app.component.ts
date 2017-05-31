@@ -4,8 +4,8 @@ import { Component } from '@angular/core';
   selector: 'my-app',
   template: `
   <nav>
-  <a routerLink="courses">Courses</a>|
-  <a routerLink="posts">Posts</a>
+  <a routerLink="courses" routerLinkActive="active">Courses</a>|
+  <a routerLink="posts" routerLinkActive="active">Posts</a>
   </nav>
   <router-outlet></router-outlet>
   `,
@@ -22,6 +22,9 @@ import { Component } from '@angular/core';
         outline:none;
         cursor:pointer;
         color:white;
+    }
+    .active{
+      color:blue!important;
     }
     `
   ]
