@@ -9,7 +9,7 @@ import 'rxjs/add/operator/toPromise';
 export class PostsService{
     constructor(private _http:Http){
     }
-
+    
     getAllPosts() {
         return this._http.get('https://jsonplaceholder.typicode.com/posts')
             .map(res=>res.json())
